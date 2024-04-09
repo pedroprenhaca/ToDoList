@@ -1,0 +1,242 @@
+
+.form{
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    position: absolute;
+    top: 10.5rem;
+    right: 0.1rem;
+    
+}
+
+
+.text input{
+    padding:1rem ;
+    width: 47rem;
+    background: var(--gray-500);
+    border: 1px solid var(--gray-700);
+    outline: none;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    color: var(--Gray-300, #808080);
+    font-family: Inter,sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+
+}
+
+.create button{
+    display: flex;
+    padding: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    background: var(--blue-dark);
+    border: none;
+    cursor: pointer;
+
+    color: var(--Gray-100, #F2F2F2);
+    font-family: Inter,sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.tasks{
+    display: flex;
+    margin-top: 6rem;
+    justify-content: space-between;
+}
+
+.takscreated{
+    display: flex;
+    gap: 0.625rem;  
+    justify-content: center;
+    align-items: center;
+}
+
+.takscreated p{
+    color: var(--Blue, #4EA8DE);
+    font-family: sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.takscreated span{
+    padding: 0.090rem 0.6rem;
+    border-radius: 62.4375rem;
+    background: var(--gray-400);
+    color: var(--gray-200);
+}
+
+.tasksdone{
+    display: flex;
+    gap: 0.625rem;  
+    justify-content: center;
+    align-items: center;
+}
+
+.tasksdone p {
+    color: var(--purple);
+    font-family: sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.tasksdone span{
+    padding: 0.090rem 0.6rem;
+    border-radius: 62.4375rem;
+    background: var(--gray-400);
+    color: var(--gray-200);
+}
+
+.text input:focus-within{
+    border: 1px solid var(--purple-dark);
+}
+
+.create button:hover{
+    background: var(--blue);
+}
+
+/* -----------------Responsividade ---------------------*/
+
+@media (max-width: 1920px) {
+    .text input{
+        width: 40rem;
+    }
+
+}
+
+
+@media (max-width: 1440px) {
+    .form{
+        width: 100%
+    }
+}
+
+@media (max-width: 1024px) {
+    .text input{
+        
+        width: 39rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .text input{
+        width: 28rem;
+    }
+}
+
+@media (max-width: 465px) {
+    .text input{
+        
+        width: 16rem;
+        padding:0.7rem ;
+    }
+
+    .create button{
+        padding: 0.9rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .text input{
+        
+        width: 14.5rem;
+        padding:0.5rem ;
+    }
+
+    .form{
+        top: 11.3rem;
+    }
+
+    .create button{
+        padding: 0.9rem;
+        font-size: 0.7rem;
+    }
+
+    .tasks{
+        display: flex;
+        margin-top: 4.5rem;
+    }
+
+    .takscreated{
+        gap: 0.3;
+    }
+
+    .takscreated p{
+        font-size: 0.7rem;
+    }
+
+    
+    .tasksdone p {
+        font-size: 0.7rem;
+    }
+
+    .tasksdone span{
+        padding: 0.15rem 0.15rem;
+        font-size:0.9rem
+    }
+
+
+}
+
+@media (max-width: 320px) {
+
+    .text input{
+        
+        width: 12rem;
+        padding:0.5rem ;
+    }
+
+    .form{
+        top: 11.3rem;
+    }
+
+    .create button{
+        padding: 0.9rem;
+        font-size: 0.7rem;
+    }
+
+    .tasks{
+        display: flex;
+        margin-top: 4rem;
+        
+    }
+    .takscreated{
+        gap:0.425rem; 
+    }
+
+    .takscreated p{
+        font-size: 0.675rem;
+    }
+
+    .takscreated span{
+        font-size: 0.7rem;
+    }
+    
+    .tasksdone p {
+        font-size: 0.675rem;
+    }
+
+    .tasksdone span{
+        padding: 0.15rem 0.15rem;
+        font-size:0.7rem
+    }
+
+    ::placeholder{
+        font-size: 0.8rem;
+    }
+
+    
+}
